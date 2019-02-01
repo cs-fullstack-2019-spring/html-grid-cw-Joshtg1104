@@ -1,0 +1,84 @@
+body{
+    width: 90%;
+    max-width: 900px;
+    margin: 7em auto;
+}
+
+section{
+    background: blue;
+    border: white solid 3px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            "item1 item2 item3"
+            "content content sidebar"
+            "footer footer footer";
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-gap: 20px;
+}
+
+
+header {
+    grid-area: header;
+}
+.div1{
+    grid-area: item1;
+    text-decoration: underline;
+}
+.div2{
+    grid-area: item2;
+    text-decoration: underline;
+}
+.div3{
+    grid-area: item3;
+    text-decoration: underline;
+}
+article {
+    grid-area: content;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.div1.div2.div3{
+    display: inline;
+    background: blue;
+    border: white;
+    color: white;
+}
+
+
+/*.container{*/
+    /*display: grid;*/
+    /*grid-template-areas:*/
+            /*"header header"*/
+            /*"item123"*/
+            /*"paragraph side"*/
+            /*"footer footer";*/
+    /*grid-template-columns: repeat(2, 3fr);*/
+    /*grid-gap: 20px;*/
+/*}*/
+/*header{*/
+    /*grid-area: header;*/
+/*}*/
+/*div{*/
+    /*grid-area: item123;*/
+/*}*/
+/*article{*/
+    /*grid-area: paragraph;*/
+/*}*/
+/*aside{*/
+    /*grid-area: side;*/
+/*}*/
+/*footer{*/
+    /*grid-area: footer;*/
+/*}*/
